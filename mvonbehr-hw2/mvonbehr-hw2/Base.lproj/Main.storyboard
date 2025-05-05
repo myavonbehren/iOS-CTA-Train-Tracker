@@ -67,7 +67,7 @@
                             <outlet property="delegate" destination="6K7-vc-xZG" id="G4I-Hr-5ao"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="1rw-CM-Abc"/>
+                    <navigationItem key="navigationItem" title="Red Line" id="1rw-CM-Abc"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuk-BD-QPQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
