@@ -9,6 +9,8 @@ import Foundation
 
 class StationService {
     
+    var dataAvailable: Bool = false
+    
     let feed = "https://data.cityofchicago.org/resource/8pix-ypme.json"
     
     enum SerializationError:Error {
@@ -32,7 +34,6 @@ class StationService {
                 print("No data")
                 return
             }
-            //debugPrint(data)
             
             do {
                                    
@@ -42,7 +43,7 @@ class StationService {
                    throw SerializationError.missing("stations")
                }
                 
-                let redLineStations = stations.filter({ $0.isRed == true })
+                let redLineStations = self.removeDuplicates(from: stations)
                 
                 guard !redLineStations.isEmpty else {
                    throw SerializationError.missing("redLineStations")
@@ -51,17 +52,28 @@ class StationService {
                 for station in redLineStations {
                     debugPrint(station.stationName)
                 }
-                
+                self.dataAvailable = true
                 DispatchQueue.main.async {
                     completion(redLineStations)
                 }
-            } catch let error as NSError {
+            } catch _ as NSError {
                 print("error")
                 completion([])
             }
         }.resume()
-        
-        
     }
+    
+    // Original returns 66 stations
+    func removeDuplicates(from stations: [Station]) -> [Station] {
+        let redLineStations = stations.filter { $0.isRed == true }
+        var uniqueStations: [String: Station] = [:]
+          
+          for station in redLineStations {
+              uniqueStations[station.stationName] = station
+          }
+          
+        return Array(uniqueStations.values)
+    }
+
 
 }
