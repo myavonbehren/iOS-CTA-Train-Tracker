@@ -41,29 +41,46 @@ class RedLineStationsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return isLoading ? stations.count : 33
+        return isLoading ? 33 : stations.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        let station = stations[indexPath.row]
-        cell.textLabel?.text = station.stationName
-        return cell
+        if (isLoading) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderCell", for: indexPath)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "station", for: indexPath)
+            if indexPath.row < stations.count {
+                let station = stations[indexPath.row]
+                cell.textLabel?.text = station.stationName
+            } else {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderCell", for: indexPath)
+                return cell
+            }
+            return cell;
+            
+        }
     }
+    
     
     func fetchStations(){
         isLoading = true
         tableView.reloadData()
         
-        service.fetchRedLineStations { [weak self] result in
+        service.fetchRedLineStations { [weak self] stations in
             guard let self = self else { return }
-            self.isLoading = false
-            self.stations = stations
             
-            let stationNames = stations.map { $0.stationName }
-            debugPrint(stationNames)
-            self.tableView.reloadData()
+            if !stations.isEmpty {
+                self.stations = stations
+                self.isLoading = false
+                self.tableView.reloadData()
+            } else {
+                debugPrint("No stations")
+            }
+            
+            //let stationNames = stations.map { $0.stationName }
+            //debugPrint(stationNames)
             
         }
     }

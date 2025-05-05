@@ -41,7 +41,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="69z-Js-iYB" kind="show" trigger="accessoryAction" id="dwu-aq-WcU"/>
+                                    <segue destination="69z-Js-iYB" kind="show" id="8Wc-6H-fOt"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaceholderCell" textLabel="8QW-B2-pJJ" style="IBUITableViewCellStyleDefault" id="odX-9F-TSb">
