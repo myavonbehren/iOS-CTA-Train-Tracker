@@ -8,7 +8,6 @@
 import Foundation
 
 class StationService {
-
     
     let feed = "https://data.cityofchicago.org/resource/8pix-ypme.json"
     
@@ -61,7 +60,7 @@ class StationService {
         }.resume()
     }
     
-    // Original returns 66 stations
+    // Original has 66 stations (duplicates)
     func removeDuplicates(from stations: [Station]) -> [Station] {
         let redLineStations = stations.filter { $0.isRed == true }
         var uniqueStations: [String: Station] = [:]

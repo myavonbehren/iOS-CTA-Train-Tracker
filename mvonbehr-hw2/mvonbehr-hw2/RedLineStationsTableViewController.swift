@@ -64,6 +64,8 @@ class RedLineStationsTableViewController: UITableViewController {
     }
     
     
+    // Using fetchRedLineStations method from StationService class
+    // Gets stations
     func fetchStations(){
         isLoading = true
         tableView.reloadData()
@@ -78,10 +80,6 @@ class RedLineStationsTableViewController: UITableViewController {
             } else {
                 debugPrint("No stations")
             }
-            
-            //let stationNames = stations.map { $0.stationName }
-            //debugPrint(stationNames)
-            
         }
     }
 
