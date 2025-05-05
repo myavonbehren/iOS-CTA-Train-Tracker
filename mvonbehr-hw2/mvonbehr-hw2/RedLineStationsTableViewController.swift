@@ -11,11 +11,13 @@ class RedLineStationsTableViewController: UITableViewController {
     
     var stations: [Station] = []
     let service = StationService()
+    var isLoading = true
     
     // API KEY 291d33ffcb8f401c8c41d051e6d873da
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        fetchStations()
         
 //        let service = StationService()
 //            service.fetchRedLineStations { stations in
@@ -34,23 +36,37 @@ class RedLineStationsTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return isLoading ? stations.count : 33
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let station = stations[indexPath.row]
+        cell.textLabel?.text = station.stationName
         return cell
     }
-    */
+    
+    func fetchStations(){
+        isLoading = true
+        tableView.reloadData()
+        
+        service.fetchRedLineStations { [weak self] result in
+            guard let self = self else { return }
+            self.isLoading = false
+            self.stations = stations
+            
+            let stationNames = stations.map { $0.stationName }
+            debugPrint(stationNames)
+            self.tableView.reloadData()
+            
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
