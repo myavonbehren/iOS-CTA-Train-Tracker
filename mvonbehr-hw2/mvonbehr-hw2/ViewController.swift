@@ -14,6 +14,7 @@ class ViewController: UIViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        StationService.self
     }
     
    

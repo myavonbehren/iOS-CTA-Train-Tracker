@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AC28BF7C2DC92699002F8D41 /* StationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28BF7B2DC92699002F8D41 /* StationService.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		ACBCDFC72DC870D500DFAD1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC28BF7B2DC92699002F8D41 /* StationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StationService.swift; path = "mvonbehr-hw2/StationService.swift"; sourceTree = "<group>"; };
 		ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvonbehr-hw2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCDFC62DC870D500DFAD1C /* mvonbehr-hw2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvonbehr-hw2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACBCDFD02DC870D500DFAD1C /* mvonbehr-hw2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvonbehr-hw2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +93,7 @@
 		ACBCDFA72DC870D400DFAD1C = {
 			isa = PBXGroup;
 			children = (
+				AC28BF7B2DC92699002F8D41 /* StationService.swift */,
 				ACBCDFB22DC870D400DFAD1C /* mvonbehr-hw2 */,
 				ACBCDFC92DC870D500DFAD1C /* mvonbehr-hw2Tests */,
 				ACBCDFD32DC870D500DFAD1C /* mvonbehr-hw2UITests */,
@@ -249,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC28BF7C2DC92699002F8D41 /* StationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
