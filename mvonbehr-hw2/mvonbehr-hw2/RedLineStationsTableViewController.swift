@@ -14,16 +14,12 @@ class RedLineStationsTableViewController: UITableViewController {
     var isLoading = true
     
     // API KEY 291d33ffcb8f401c8c41d051e6d873da
+    // https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=291d33ffcb8f401c8c41d051e6d873da&max=1&mapid=41450&outputType=JSON
+    // 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchStations()
-        
-//        let service = StationService()
-//            service.fetchRedLineStations { stations in
-//                print("Got \(stations.count) stations")
-//            }    }
-        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -59,13 +55,12 @@ class RedLineStationsTableViewController: UITableViewController {
                 return cell
             }
             return cell;
-            
         }
     }
     
     
     // Using fetchRedLineStations method from StationService class
-    // Gets stations
+    // Gets station name
     func fetchStations(){
         isLoading = true
         tableView.reloadData()
