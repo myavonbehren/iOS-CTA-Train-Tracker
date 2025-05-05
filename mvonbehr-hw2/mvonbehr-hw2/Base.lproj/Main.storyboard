@@ -10,7 +10,7 @@
         <!--CTA Train Tracker-->
         <scene sceneID="vcY-e8-XYR">
             <objects>
-                <tableViewController title="CTA Train Tracker" id="6K7-vc-xZG" customClass="TableViewController" customModule="mvonbehr_hw2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="CTA Train Tracker" id="6K7-vc-xZG" customClass="RedLineStationsTableViewController" customModule="mvonbehr_hw2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="V7M-1G-ZdB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="M5H-cA-6KK" style="IBUITableViewCellStyleDefault" id="FF8-lm-9x5">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="stationName" textLabel="M5H-cA-6KK" style="IBUITableViewCellStyleDefault" id="FF8-lm-9x5">
                                 <rect key="frame" x="0.0" y="94" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FF8-lm-9x5" id="ru0-YN-HHp">

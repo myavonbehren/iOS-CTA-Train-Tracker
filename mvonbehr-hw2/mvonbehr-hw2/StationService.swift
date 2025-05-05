@@ -7,9 +7,9 @@
 
 import Foundation
 
+public var dataAvailable: Bool = false
+
 class StationService {
-    
-    var dataAvailable: Bool = false
     
     let feed = "https://data.cityofchicago.org/resource/8pix-ypme.json"
     
@@ -52,7 +52,8 @@ class StationService {
                 for station in redLineStations {
                     debugPrint(station.stationName)
                 }
-                self.dataAvailable = true
+                
+                dataAvailable = true
                 DispatchQueue.main.async {
                     completion(redLineStations)
                 }

@@ -7,16 +7,21 @@
 
 import UIKit
 
+
 class TableViewController: UITableViewController, UISearchBarDelegate {
     
-    // API KEY 291d33ffcb8f401c8c41d051e6d873da
+    var stations: [Station] = []
+    let service = StationService()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        _ = StationService()
         
-    }
+        let service = StationService()
+            service.fetchRedLineStations { stations in
+                print("Got \(stations.count) stations")
+            }    }
     
    
     
@@ -24,9 +29,7 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
         print("Searching for: \(searchText)")
     }
     
-    /*
-     https://data.cityofchicago.org/resource/8pix-ypme.json
-     */
+    
     
 }
 

@@ -20,6 +20,8 @@ struct Station: Codable {
         case isRed = "red"
     }
     
+    
+    
 }
 
 /*
