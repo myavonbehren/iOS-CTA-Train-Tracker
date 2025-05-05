@@ -9,7 +9,7 @@ import Foundation
 
 class StationService {
     
-    let feed = "http://data.cityofchicago.org/resource/8pix-ypme.json"
+    let feed = "https://data.cityofchicago.org/resource/8pix-ypme.json"
     
     enum SerializationError:Error {
         case missing(String)
@@ -30,7 +30,23 @@ class StationService {
             guard let data = data else { return }
             debugPrint(data)
             
-        }
+            do {
+                                   
+                let stations = try JSONDecoder().decode([Station].self, from: data)
+                let redLineStations = stations.filter({ $0.isRed == true })
+                
+                for station in redLineStations {
+                    debugPrint(station.stationName)
+                }
+                
+                DispatchQueue.main.async {
+                    completion(redLineStations)
+                }
+            } catch {
+                print("error")
+                completion([])
+            }
+        }.resume()
         
         
     }
