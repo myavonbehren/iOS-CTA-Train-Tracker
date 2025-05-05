@@ -41,23 +41,35 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Red"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ztk-4I-lF6"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="IM1-8c-Ptz" userLabel="Brown">
                                                         <rect key="frame" x="85.666666666666657" y="0.0" width="80.666666666666657" height="34.333333333333336"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Brown"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAM-kT-6v1"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="N0z-aX-tHl" userLabel="Orange">
                                                         <rect key="frame" x="171.33333333333334" y="0.0" width="80.666666666666657" height="34.333333333333336"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Orange"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kfU-Kx-2Gf"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L34-Er-Gjy">
                                                         <rect key="frame" x="257" y="0.0" width="80.666666666666686" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Purple"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="haX-vQ-uPd"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -68,21 +80,33 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="72.333333333333329" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Blue"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFB-Iq-pFG"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YW9-1f-58z">
                                                         <rect key="frame" x="77.333333333333343" y="0.0" width="72.333333333333343" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Green"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4T7-1o-Xoe"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7y6-D9-orG">
                                                         <rect key="frame" x="154.66666666666666" y="0.0" width="72.333333333333343" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Pink"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3b9-Nk-0Vq"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYd-DW-Cee">
                                                         <rect key="frame" x="232.00000000000003" y="0.0" width="72.333333333333343" height="34.333333333333336"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="gray" title="Yellow"/>
+                                                        <connections>
+                                                            <action selector="trainLineSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaI-WG-RIB"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -137,6 +161,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bJn-zZ-GmG"/>
+                    <connections>
+                        <outletCollection property="trainLines" destination="ENT-2O-3tV" collectionClass="NSMutableArray" id="t6P-SN-S0E"/>
+                        <outletCollection property="trainLines" destination="IM1-8c-Ptz" collectionClass="NSMutableArray" id="Oe3-vy-qF8"/>
+                        <outletCollection property="trainLines" destination="N0z-aX-tHl" collectionClass="NSMutableArray" id="GZu-y3-L31"/>
+                        <outletCollection property="trainLines" destination="L34-Er-Gjy" collectionClass="NSMutableArray" id="IPT-HU-hZk"/>
+                        <outletCollection property="trainLines" destination="zYd-DW-Cee" collectionClass="NSMutableArray" id="gwI-q8-Bdf"/>
+                        <outletCollection property="trainLines" destination="7y6-D9-orG" collectionClass="NSMutableArray" id="S7k-hc-79O"/>
+                        <outletCollection property="trainLines" destination="YW9-1f-58z" collectionClass="NSMutableArray" id="cuT-ab-Ua6"/>
+                        <outletCollection property="trainLines" destination="nsI-Y3-dNM" collectionClass="NSMutableArray" id="MJT-65-LiD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

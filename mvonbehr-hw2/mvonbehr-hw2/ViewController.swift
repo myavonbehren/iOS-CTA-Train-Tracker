@@ -7,22 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UISearchBarDelegate {
     
-    @IBOutlet weak var popUpButton: UIButton!
+    @IBOutlet var trainLines: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        popUpButton.showsMenuAsPrimaryAction = true
-        setupMenuActions()
     }
     
-    func setupMenuActions() {
-        guard let menu = popUpButton.menu else { return }
-        debugPrint(menu)
+    @IBAction func trainLineSelected(_ sender: UIButton) {
+        for button in trainLines {
+            button.isSelected = false
+        }
+    
+        sender.isSelected = true
     }
-
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Searching for: \(searchText)")
+    }
     
 }
 
