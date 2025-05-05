@@ -14,27 +14,14 @@ class TableViewController: UITableViewController, UISearchBarDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let service = StationService()
-            service.fetchRedLineStations { stations in
-                print("Got \(stations.count) stations")
-            }    }
+        _ = StationService()
+        
+    }
     
    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         print("Searching for: \(searchText)")
-    }
-    
-    func testStationService() {
-        let stationService = StationService()
-        
-        print("Testing station service...")
-        stationService.fetchRedLineStations { stations in            
-            for (index, station) in stations.enumerated() {
-                print("  \(index + 1). \(station.stationName)")
-            }
-    
-        }
     }
     
     /*
