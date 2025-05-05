@@ -27,13 +27,26 @@ class StationService {
                 print(error!.localizedDescription)
                 return
             }
-            guard let data = data else { return }
-            debugPrint(data)
+            
+            guard let data = data else {
+                print("No data")
+                return
+            }
+            //debugPrint(data)
             
             do {
                                    
                 let stations = try JSONDecoder().decode([Station].self, from: data)
+                
+                guard !stations.isEmpty else {
+                   throw SerializationError.missing("stations")
+               }
+                
                 let redLineStations = stations.filter({ $0.isRed == true })
+                
+                guard !redLineStations.isEmpty else {
+                   throw SerializationError.missing("redLineStations")
+               }
                 
                 for station in redLineStations {
                     debugPrint(station.stationName)
@@ -42,7 +55,7 @@ class StationService {
                 DispatchQueue.main.async {
                     completion(redLineStations)
                 }
-            } catch {
+            } catch let error as NSError {
                 print("error")
                 completion([])
             }
