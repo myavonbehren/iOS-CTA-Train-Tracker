@@ -7,17 +7,23 @@
 
 import Foundation
 
-struct Station {
-    let stationName: String
-    let mapID: String
-    let isRed: Bool
+
+struct Station: Codable {
+    var stationName: String
+    var mapID: String
+    var isRed: Bool
     
-    var displayName: String {
-        return stationName
+    enum CodingKeys: String, CodingKey {
+        case stationName = "station_name"
+        case mapID = "map_id"
+        case isRed
     }
+    
 }
 
 /*
+ https://developer.apple.com/documentation/foundation/encoding-and-decoding-custom-types
+ 
  "stop_id": "30162",
      "direction_id": "W",
      "stop_name": "18th (54th/Cermak-bound)",
