@@ -7,6 +7,24 @@
 
 import Foundation
 
+// Nested JSON file
+
+struct CTAResponse: Codable {
+    let cttatt: CTATrainTracker
+}
+
+struct CTATrainTracker: Codable {
+    let eta: [CTATrain]
+}
+
+
+struct CTATrain: Codable {
+    let staId: String
+    let staNm: String
+    let destNm: String
+    let arrT: String
+}
+
 /*
  
  {
@@ -16,7 +34,7 @@ import Foundation
      "errNm": null,
      "eta": [
        {
-         "staId": "41450",
+         "staId": "41450", <-- map id
          "stpId": "30279",
          "staNm": "Chicago",
          "stpDe": "Service toward Howard",
