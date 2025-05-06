@@ -8,9 +8,29 @@
 import UIKit
 
 class TrainTimesTableViewController: UITableViewController {
+    
+    let trainArrivalService = TrainArrivalService()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        debugPrint("this is a test view controller is connected")
+        
+        let testMapID = "41450"
+        trainArrivalService.fetchTrainArrivals(for: testMapID) { arrivals in
+            if arrivals.isEmpty {
+                debugPrint("failed :(")
+            } else {
+                if let firstArrival = arrivals.first {
+                    print("Station: \(firstArrival.staNm)")
+                    print("Destination: \(firstArrival.destNm)")
+                    print("Arrival time: \(firstArrival.arrT)")
+                    print("Formatted time: \(firstArrival.formattedArrivalTime)")
+                }
+            }
+            
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

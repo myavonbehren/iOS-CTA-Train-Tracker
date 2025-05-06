@@ -47,6 +47,7 @@ class StationService {
                    throw SerializationError.missing("redLineStations")
                }
                 
+
 //                for station in redLineStations {
 //                    debugPrint(station.stationName)
 //                }
@@ -54,8 +55,12 @@ class StationService {
                 DispatchQueue.main.async {
                     completion(redLineStations)
                 }
-            } catch _ as NSError {
-                print("error")
+            } catch SerializationError.missing(let msg){
+                print("Missing \(msg)")
+            } catch SerializationError.invalid(let msg, let data){
+                print("Invalid \(msg): \(data)")
+            } catch let error as NSError {
+                print(error.localizedDescription)
                 completion([])
             }
         }.resume()
