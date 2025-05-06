@@ -9,25 +9,20 @@ import UIKit
 
 class TrainTimesTableViewController: UITableViewController {
     
+    var station: Station?
+    var arrivals: [CTATrain] = []
     let trainArrivalService = TrainArrivalService()
+    var isLoading = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
                 
-        let testMapID = "41450"
-        trainArrivalService.fetchTrainArrivals(for: testMapID) { arrivals in
-            if arrivals.isEmpty {
-                debugPrint("failed :(")
-            } else {
-                if let firstArrival = arrivals.first {
-                    print("Station: \(firstArrival.staNm)")
-                    print("Destination: \(firstArrival.destNm)")
-                    print("Arrival time: \(firstArrival.arrT)")
-                    print("Formatted time: \(firstArrival.formattedArrivalTime)")
-                }
-            }
-            
+        if let stationName = station?.stationName{
+            self.navigationItem.title = stationName
+            title = stationName
         }
+        
+        
         
 
         // Uncomment the following line to preserve selection between presentations
@@ -36,6 +31,8 @@ class TrainTimesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    
 
     // MARK: - Table view data source
 
@@ -66,6 +63,28 @@ class TrainTimesTableViewController: UITableViewController {
         return true
     }
     */
+    
+    /*
+    func fetchArrivalTimes() {
+        isLoading = true
+        tableView.reloadData()
+        
+        trainArrivalService.fetchTrainArrivals { [weak self] result in
+            guard let self = self else { return }
+            self.isLoading = false
+            switch result {
+            case .success(let arrivals):
+                self.trainArrivalService.fetchTrainArrivals { [weak self] result in
+                    guard let self = self else { return }
+                    self.isLoading = false
+                    switch result {
+                        
+                    }
+                }
+            }
+        }
+        
+    }*/
 
     /*
     // Override to support editing the table view.

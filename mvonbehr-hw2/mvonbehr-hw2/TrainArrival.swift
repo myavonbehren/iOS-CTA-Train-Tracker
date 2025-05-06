@@ -24,7 +24,7 @@ struct CTATrain: Codable {
     let arrT: String
     
     var arrivalMin: Int? {
-        return calculateMinutesToArrival(arrivalTime: "2025-05-05T20:52:00")
+        return calculateMinutesToArrival(arrivalTime: arrT)
     }
     
     var formattedArrivalTime: String {
