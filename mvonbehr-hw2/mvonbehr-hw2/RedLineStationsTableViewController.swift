@@ -21,6 +21,8 @@ class RedLineStationsTableViewController: UITableViewController {
         super.viewDidLoad()
         fetchStations()
         
+        debugPrint(testMinArrivalTime(arrivalTime: "2025-05-05T18:28:27") ?? "no date :(")
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,7 +31,17 @@ class RedLineStationsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    
+    // arrT": "2025-05-05T18:28:27"
+    
+    func testMinArrivalTime(arrivalTime: String) -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        let date = dateFormatter.date(from: arrivalTime)
+        return date
 
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
