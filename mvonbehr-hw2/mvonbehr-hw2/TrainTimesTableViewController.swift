@@ -36,24 +36,52 @@ class TrainTimesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return isLoading ? 0 : arrivals.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if (isLoading) {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PlaceholderCell", for: indexPath)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "destination", for: indexPath)
+            if indexPath.row < arrivals.count {
+                let arrival = arrivals[indexPath.row]
+                cell.textLabel?.text = arrival.destNm
+                cell.detailTextLabel?.text = arrival.formattedArrivalTime
+            }
+            return cell
+        }
     }
-    */
+    
+    func fetchArrivalTimes() {
+            isLoading = true
+            tableView.reloadData()
+            
+            guard let station = station, !station.mapID.isEmpty else {
+                debugPrint("No ID available")
+                isLoading = false
+                tableView.reloadData()
+                return
+            }
 
+            trainArrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
+                guard let self = self else { return }
+                
+                self.arrivals = arrivals
+                self.isLoading = false
+                
+                self.tableView.reloadData()
+                debugPrint(arrivals)
+            }
+    }
+        
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -63,35 +91,6 @@ class TrainTimesTableViewController: UITableViewController {
     */
     
     
-    func fetchArrivalTimes() {
-        isLoading = true
-        tableView.reloadData()
-        
-        guard let station = station, !station.mapID.isEmpty else {
-            debugPrint("No ID available")
-            isLoading = false
-            tableView.reloadData()
-            return
-        }
-        
-        /*
-         arrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
-         */
-        
-        trainArrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
-            guard let self = self else { return }
-            
-            self.arrivals = arrivals
-            self.isLoading = false
-            
-            self.tableView.reloadData()
-            debugPrint(arrivals)
-        }
-        
-        debugPrint(station)
-        
-        
-    }
 
     /*
     // Override to support editing the table view.

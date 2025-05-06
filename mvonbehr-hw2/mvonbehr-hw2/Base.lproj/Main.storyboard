@@ -137,9 +137,7 @@
                             <outlet property="delegate" destination="69z-Js-iYB" id="Dqd-5A-CPy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Train Line" id="qJw-gm-0Ve">
-                        <barButtonItem key="rightBarButtonItem" title="Refresh" id="rD4-t7-BOK"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Train Line" id="qJw-gm-0Ve"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dI-ir-sjC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

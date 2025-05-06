@@ -20,6 +20,7 @@ struct CTATrainTracker: Codable {
 struct CTATrain: Codable {
     let staId: String
     let staNm: String
+    let rt: String
     let destNm: String
     let arrT: String
     
