@@ -18,12 +18,10 @@ class TrainTimesTableViewController: UITableViewController {
         super.viewDidLoad()
                 
         if let stationName = station?.stationName{
-            self.navigationItem.title = stationName
             title = stationName
         }
         
-        
-        
+        fetchArrivalTimes()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -64,27 +62,36 @@ class TrainTimesTableViewController: UITableViewController {
     }
     */
     
-    /*
+    
     func fetchArrivalTimes() {
         isLoading = true
         tableView.reloadData()
         
-        trainArrivalService.fetchTrainArrivals { [weak self] result in
-            guard let self = self else { return }
-            self.isLoading = false
-            switch result {
-            case .success(let arrivals):
-                self.trainArrivalService.fetchTrainArrivals { [weak self] result in
-                    guard let self = self else { return }
-                    self.isLoading = false
-                    switch result {
-                        
-                    }
-                }
-            }
+        guard let station = station, !station.mapID.isEmpty else {
+            debugPrint("No ID available")
+            isLoading = false
+            tableView.reloadData()
+            return
         }
         
-    }*/
+        /*
+         arrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
+         */
+        
+        trainArrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
+            guard let self = self else { return }
+            
+            self.arrivals = arrivals
+            self.isLoading = false
+            
+            self.tableView.reloadData()
+            debugPrint(arrivals)
+        }
+        
+        debugPrint(station)
+        
+        
+    }
 
     /*
     // Override to support editing the table view.

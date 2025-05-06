@@ -13,10 +13,6 @@ class RedLineStationsTableViewController: UITableViewController {
     let service = StationService()
     var isLoading = true
     
-    // API KEY 291d33ffcb8f401c8c41d051e6d873da
-    // https://lapi.transitchicago.com/api/1.0/ttarrivals.aspx?key=291d33ffcb8f401c8c41d051e6d873da&max=1&mapid=41450&outputType=JSON
-    // 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchStations()
@@ -29,11 +25,6 @@ class RedLineStationsTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    
-    
-    
-
-    
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
