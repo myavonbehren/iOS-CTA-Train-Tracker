@@ -47,9 +47,10 @@ class StationService {
                    throw SerializationError.missing("redLineStations")
                }
                 
-                for station in redLineStations {
-                    debugPrint(station.stationName)
-                }
+//                for station in redLineStations {
+//                    debugPrint(station.stationName)
+//                }
+                
                 DispatchQueue.main.async {
                     completion(redLineStations)
                 }

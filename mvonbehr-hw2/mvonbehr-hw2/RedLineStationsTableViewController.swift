@@ -21,18 +21,6 @@ class RedLineStationsTableViewController: UITableViewController {
         super.viewDidLoad()
         fetchStations()
         
-        var arrivalMin: Int? {
-            return calculateMinutesToArrival(arrivalTime: "2025-05-05T20:42:00")
-        }
-        
-        var formattedArrivalTime: String {
-            guard let arrivalMin = arrivalMin else {
-                return "Due"
-            }
-            return "\(arrivalMin) minutes"
-        }
-        
-        debugPrint(formattedArrivalTime)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -44,16 +32,7 @@ class RedLineStationsTableViewController: UITableViewController {
     
     
     
-    func calculateMinutesToArrival(arrivalTime: String) -> Int? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        guard let arrivalDate = dateFormatter.date(from: arrivalTime) else { return 0 }
-        let calendar = Calendar.current
-        let timeComponents = calendar.dateComponents([.hour, .minute], from: arrivalDate)
-        let nowComponents = calendar.dateComponents([.hour, .minute], from: Date())
-        let difference = calendar.dateComponents([.minute], from: nowComponents , to: timeComponents).minute!
-        return difference
-    }
+
     
     
     override func numberOfSections(in tableView: UITableView) -> Int {
