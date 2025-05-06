@@ -13,9 +13,7 @@ class TrainTimesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        debugPrint("this is a test view controller is connected")
-        
+                
         let testMapID = "41450"
         trainArrivalService.fetchTrainArrivals(for: testMapID) { arrivals in
             if arrivals.isEmpty {

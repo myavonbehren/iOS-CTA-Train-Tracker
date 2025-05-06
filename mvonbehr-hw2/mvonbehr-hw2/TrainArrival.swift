@@ -10,7 +10,7 @@ import Foundation
 // Nested JSON file
 
 struct CTAResponse: Codable {
-    let cttatt: CTATrainTracker
+    let ctatt: CTATrainTracker
 }
 
 struct CTATrainTracker: Codable {

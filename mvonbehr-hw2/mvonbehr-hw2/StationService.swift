@@ -75,6 +75,6 @@ class StationService {
               uniqueStations[station.stationName] = station
           }
           
-        return Array(uniqueStations.values)
+        return Array(uniqueStations.values).sorted { $0.stationName < $1.stationName }
     }
 }
