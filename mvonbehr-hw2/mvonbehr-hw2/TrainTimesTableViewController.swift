@@ -30,7 +30,6 @@ class TrainTimesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
-    
 
     // MARK: - Table view data source
 
@@ -73,12 +72,12 @@ class TrainTimesTableViewController: UITableViewController {
 
             trainArrivalService.fetchTrainArrivals(for: station.mapID) { [weak self] arrivals in
                 guard let self = self else { return }
-                
-                self.arrivals = arrivals
+             
+                let redLineArrivals = arrivals.filter { $0.rt == "Red" }
+                self.arrivals = redLineArrivals
                 self.isLoading = false
                 
                 self.tableView.reloadData()
-                debugPrint(arrivals)
             }
     }
         
