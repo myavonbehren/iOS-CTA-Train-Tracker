@@ -27,8 +27,6 @@ struct CTATrain: Codable {
     
 }
 
-
-
 /*
  
  "arrT": "2025-05-05T18:28:27"

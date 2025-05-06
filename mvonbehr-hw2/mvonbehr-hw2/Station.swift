@@ -19,7 +19,4 @@ struct Station: Codable {
         case mapID = "map_id"
         case isRed = "red"
     }
-    
-    
-    
 }
