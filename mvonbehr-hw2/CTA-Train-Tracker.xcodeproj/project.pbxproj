@@ -6,27 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		ACBCDFC72DC870D500DFAD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBCDFA82DC870D400DFAD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBCDFAF2DC870D400DFAD1C;
+			remoteInfo = "mvonbehr-hw2";
+		};
+		ACBCDFD12DC870D500DFAD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACBCDFA82DC870D400DFAD1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACBCDFAF2DC870D400DFAD1C;
+			remoteInfo = "mvonbehr-hw2";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvonbehr-hw2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBCDFB02DC870D400DFAD1C /* CTA-Train-Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CTA-Train-Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBCDFC62DC870D500DFAD1C /* CTA-Train-TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CTA-Train-TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACBCDFD02DC870D500DFAD1C /* CTA-Train-TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CTA-Train-TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		ACBCDFD82DC870D500DFAD1C /* Exceptions for "mvonbehr-hw2" folder in "mvonbehr-hw2" target */ = {
+		ACBCDFD82DC870D500DFAD1C /* Exceptions for "CTA-Train-Tracker" folder in "CTA-Train-Tracker" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */;
+			target = ACBCDFAF2DC870D400DFAD1C /* CTA-Train-Tracker */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		ACBCDFB22DC870D400DFAD1C /* mvonbehr-hw2 */ = {
+		ACBCDFB22DC870D400DFAD1C /* CTA-Train-Tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				ACBCDFD82DC870D500DFAD1C /* Exceptions for "mvonbehr-hw2" folder in "mvonbehr-hw2" target */,
+				ACBCDFD82DC870D500DFAD1C /* Exceptions for "CTA-Train-Tracker" folder in "CTA-Train-Tracker" target */,
 			);
-			path = "mvonbehr-hw2";
+			path = "CTA-Train-Tracker";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -39,13 +58,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACBCDFC32DC870D500DFAD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBCDFCD2DC870D500DFAD1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		ACBCDFA72DC870D400DFAD1C = {
 			isa = PBXGroup;
 			children = (
-				ACBCDFB22DC870D400DFAD1C /* mvonbehr-hw2 */,
+				ACBCDFB22DC870D400DFAD1C /* CTA-Train-Tracker */,
 				ACBCDFB12DC870D400DFAD1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +86,9 @@
 		ACBCDFB12DC870D400DFAD1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */,
+				ACBCDFB02DC870D400DFAD1C /* CTA-Train-Tracker.app */,
+				ACBCDFC62DC870D500DFAD1C /* CTA-Train-TrackerTests.xctest */,
+				ACBCDFD02DC870D500DFAD1C /* CTA-Train-TrackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +96,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */ = {
+		ACBCDFAF2DC870D400DFAD1C /* CTA-Train-Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ACBCDFD92DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2" */;
+			buildConfigurationList = ACBCDFD92DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-Tracker" */;
 			buildPhases = (
 				ACBCDFAC2DC870D400DFAD1C /* Sources */,
 				ACBCDFAD2DC870D400DFAD1C /* Frameworks */,
@@ -74,14 +109,54 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				ACBCDFB22DC870D400DFAD1C /* mvonbehr-hw2 */,
+				ACBCDFB22DC870D400DFAD1C /* CTA-Train-Tracker */,
 			);
-			name = "mvonbehr-hw2";
+			name = "CTA-Train-Tracker";
 			packageProductDependencies = (
 			);
 			productName = "mvonbehr-hw2";
-			productReference = ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */;
+			productReference = ACBCDFB02DC870D400DFAD1C /* CTA-Train-Tracker.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ACBCDFC52DC870D500DFAD1C /* CTA-Train-TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBCDFDE2DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-TrackerTests" */;
+			buildPhases = (
+				ACBCDFC22DC870D500DFAD1C /* Sources */,
+				ACBCDFC32DC870D500DFAD1C /* Frameworks */,
+				ACBCDFC42DC870D500DFAD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBCDFC82DC870D500DFAD1C /* PBXTargetDependency */,
+			);
+			name = "CTA-Train-TrackerTests";
+			packageProductDependencies = (
+			);
+			productName = "mvonbehr-hw2Tests";
+			productReference = ACBCDFC62DC870D500DFAD1C /* CTA-Train-TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACBCDFCF2DC870D500DFAD1C /* CTA-Train-TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACBCDFE12DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-TrackerUITests" */;
+			buildPhases = (
+				ACBCDFCC2DC870D500DFAD1C /* Sources */,
+				ACBCDFCD2DC870D500DFAD1C /* Frameworks */,
+				ACBCDFCE2DC870D500DFAD1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACBCDFD22DC870D500DFAD1C /* PBXTargetDependency */,
+			);
+			name = "CTA-Train-TrackerUITests";
+			packageProductDependencies = (
+			);
+			productName = "mvonbehr-hw2UITests";
+			productReference = ACBCDFD02DC870D500DFAD1C /* CTA-Train-TrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,9 +171,17 @@
 					ACBCDFAF2DC870D400DFAD1C = {
 						CreatedOnToolsVersion = 16.3;
 					};
+					ACBCDFC52DC870D500DFAD1C = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = ACBCDFAF2DC870D400DFAD1C;
+					};
+					ACBCDFCF2DC870D500DFAD1C = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = ACBCDFAF2DC870D400DFAD1C;
+					};
 				};
 			};
-			buildConfigurationList = ACBCDFAB2DC870D400DFAD1C /* Build configuration list for PBXProject "mvonbehr-hw2" */;
+			buildConfigurationList = ACBCDFAB2DC870D400DFAD1C /* Build configuration list for PBXProject "CTA-Train-Tracker" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,13 +195,29 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */,
+				ACBCDFAF2DC870D400DFAD1C /* CTA-Train-Tracker */,
+				ACBCDFC52DC870D500DFAD1C /* CTA-Train-TrackerTests */,
+				ACBCDFCF2DC870D500DFAD1C /* CTA-Train-TrackerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ACBCDFAE2DC870D400DFAD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBCDFC42DC870D500DFAD1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBCDFCE2DC870D500DFAD1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +234,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACBCDFC22DC870D500DFAD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACBCDFCC2DC870D500DFAD1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACBCDFC82DC870D500DFAD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBCDFAF2DC870D400DFAD1C /* CTA-Train-Tracker */;
+			targetProxy = ACBCDFC72DC870D500DFAD1C /* PBXContainerItemProxy */;
+		};
+		ACBCDFD22DC870D500DFAD1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACBCDFAF2DC870D400DFAD1C /* CTA-Train-Tracker */;
+			targetProxy = ACBCDFD12DC870D500DFAD1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACBCDFDA2DC870D500DFAD1C /* Debug */ = {
@@ -147,7 +273,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "mvonbehr-hw2/Info.plist";
+				INFOPLIST_FILE = "CTA-Train-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -158,7 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.CTA-Train-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -175,7 +301,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "mvonbehr-hw2/Info.plist";
+				INFOPLIST_FILE = "CTA-Train-Tracker/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -186,7 +312,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.CTA-Train-Tracker";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,10 +441,82 @@
 			};
 			name = Release;
 		};
+		ACBCDFDF2DC870D500DFAD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-CTA-Train-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTA-Train-Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CTA-Train-Tracker";
+			};
+			name = Debug;
+		};
+		ACBCDFE02DC870D500DFAD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-CTA-Train-TrackerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CTA-Train-Tracker.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CTA-Train-Tracker";
+			};
+			name = Release;
+		};
+		ACBCDFE22DC870D500DFAD1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.CTA-Train-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CTA-Train-Tracker";
+			};
+			name = Debug;
+		};
+		ACBCDFE32DC870D500DFAD1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.CTA-Train-Tracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CTA-Train-Tracker";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ACBCDFAB2DC870D400DFAD1C /* Build configuration list for PBXProject "mvonbehr-hw2" */ = {
+		ACBCDFAB2DC870D400DFAD1C /* Build configuration list for PBXProject "CTA-Train-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACBCDFDC2DC870D500DFAD1C /* Debug */,
@@ -327,11 +525,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ACBCDFD92DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2" */ = {
+		ACBCDFD92DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ACBCDFDA2DC870D500DFAD1C /* Debug */,
 				ACBCDFDB2DC870D500DFAD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBCDFDE2DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBCDFDF2DC870D500DFAD1C /* Debug */,
+				ACBCDFE02DC870D500DFAD1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACBCDFE12DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "CTA-Train-TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACBCDFE22DC870D500DFAD1C /* Debug */,
+				ACBCDFE32DC870D500DFAD1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

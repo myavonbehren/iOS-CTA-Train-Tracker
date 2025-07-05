@@ -1,6 +1,6 @@
 //
 //  TrainArrival.swift
-//  mvonbehr-hw2
+//  CTA-Train-Tracker
 //
 //  Created by Mya Von Behren on 5/5/25.
 //
@@ -23,6 +23,8 @@ struct CTATrain: Codable {
     let rt: String
     let destNm: String
     let arrT: String
+    
+    // FIX
     
     var arrivalMin: Int? {
         return calculateMinutesToArrival(arrivalTime: arrT)

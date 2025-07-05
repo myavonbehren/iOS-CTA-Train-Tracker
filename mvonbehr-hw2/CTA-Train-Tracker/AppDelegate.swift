@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  mvonbehr-hw2
+//  CTA-Train-Tracker
 //
 //  Created by Mya Von Behren on 5/4/25.
 //
