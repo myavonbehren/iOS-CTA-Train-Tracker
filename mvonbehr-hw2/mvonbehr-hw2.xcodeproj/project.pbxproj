@@ -6,27 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXContainerItemProxy section */
-		ACBCDFC72DC870D500DFAD1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACBCDFA82DC870D400DFAD1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACBCDFAF2DC870D400DFAD1C;
-			remoteInfo = "mvonbehr-hw2";
-		};
-		ACBCDFD12DC870D500DFAD1C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ACBCDFA82DC870D400DFAD1C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ACBCDFAF2DC870D400DFAD1C;
-			remoteInfo = "mvonbehr-hw2";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mvonbehr-hw2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBCDFC62DC870D500DFAD1C /* mvonbehr-hw2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvonbehr-hw2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACBCDFD02DC870D500DFAD1C /* mvonbehr-hw2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mvonbehr-hw2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,34 +29,10 @@
 			path = "mvonbehr-hw2";
 			sourceTree = "<group>";
 		};
-		ACBCDFC92DC870D500DFAD1C /* mvonbehr-hw2Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "mvonbehr-hw2Tests";
-			sourceTree = "<group>";
-		};
-		ACBCDFD32DC870D500DFAD1C /* mvonbehr-hw2UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "mvonbehr-hw2UITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ACBCDFAD2DC870D400DFAD1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBCDFC32DC870D500DFAD1C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBCDFCD2DC870D500DFAD1C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,8 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				ACBCDFB22DC870D400DFAD1C /* mvonbehr-hw2 */,
-				ACBCDFC92DC870D500DFAD1C /* mvonbehr-hw2Tests */,
-				ACBCDFD32DC870D500DFAD1C /* mvonbehr-hw2UITests */,
 				ACBCDFB12DC870D400DFAD1C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,8 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */,
-				ACBCDFC62DC870D500DFAD1C /* mvonbehr-hw2Tests.xctest */,
-				ACBCDFD02DC870D500DFAD1C /* mvonbehr-hw2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,52 +83,6 @@
 			productReference = ACBCDFB02DC870D400DFAD1C /* mvonbehr-hw2.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ACBCDFC52DC870D500DFAD1C /* mvonbehr-hw2Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACBCDFDE2DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2Tests" */;
-			buildPhases = (
-				ACBCDFC22DC870D500DFAD1C /* Sources */,
-				ACBCDFC32DC870D500DFAD1C /* Frameworks */,
-				ACBCDFC42DC870D500DFAD1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACBCDFC82DC870D500DFAD1C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				ACBCDFC92DC870D500DFAD1C /* mvonbehr-hw2Tests */,
-			);
-			name = "mvonbehr-hw2Tests";
-			packageProductDependencies = (
-			);
-			productName = "mvonbehr-hw2Tests";
-			productReference = ACBCDFC62DC870D500DFAD1C /* mvonbehr-hw2Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ACBCDFCF2DC870D500DFAD1C /* mvonbehr-hw2UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ACBCDFE12DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2UITests" */;
-			buildPhases = (
-				ACBCDFCC2DC870D500DFAD1C /* Sources */,
-				ACBCDFCD2DC870D500DFAD1C /* Frameworks */,
-				ACBCDFCE2DC870D500DFAD1C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ACBCDFD22DC870D500DFAD1C /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				ACBCDFD32DC870D500DFAD1C /* mvonbehr-hw2UITests */,
-			);
-			name = "mvonbehr-hw2UITests";
-			packageProductDependencies = (
-			);
-			productName = "mvonbehr-hw2UITests";
-			productReference = ACBCDFD02DC870D500DFAD1C /* mvonbehr-hw2UITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,14 +95,6 @@
 				TargetAttributes = {
 					ACBCDFAF2DC870D400DFAD1C = {
 						CreatedOnToolsVersion = 16.3;
-					};
-					ACBCDFC52DC870D500DFAD1C = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = ACBCDFAF2DC870D400DFAD1C;
-					};
-					ACBCDFCF2DC870D500DFAD1C = {
-						CreatedOnToolsVersion = 16.3;
-						TestTargetID = ACBCDFAF2DC870D400DFAD1C;
 					};
 				};
 			};
@@ -214,28 +113,12 @@
 			projectRoot = "";
 			targets = (
 				ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */,
-				ACBCDFC52DC870D500DFAD1C /* mvonbehr-hw2Tests */,
-				ACBCDFCF2DC870D500DFAD1C /* mvonbehr-hw2UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ACBCDFAE2DC870D400DFAD1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBCDFC42DC870D500DFAD1C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBCDFCE2DC870D500DFAD1C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -252,34 +135,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ACBCDFC22DC870D500DFAD1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ACBCDFCC2DC870D500DFAD1C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ACBCDFC82DC870D500DFAD1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */;
-			targetProxy = ACBCDFC72DC870D500DFAD1C /* PBXContainerItemProxy */;
-		};
-		ACBCDFD22DC870D500DFAD1C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ACBCDFAF2DC870D400DFAD1C /* mvonbehr-hw2 */;
-			targetProxy = ACBCDFD12DC870D500DFAD1C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		ACBCDFDA2DC870D500DFAD1C /* Debug */ = {
@@ -459,78 +315,6 @@
 			};
 			name = Release;
 		};
-		ACBCDFDF2DC870D500DFAD1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvonbehr-hw2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mvonbehr-hw2";
-			};
-			name = Debug;
-		};
-		ACBCDFE02DC870D500DFAD1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2Tests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mvonbehr-hw2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mvonbehr-hw2";
-			};
-			name = Release;
-		};
-		ACBCDFE22DC870D500DFAD1C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "mvonbehr-hw2";
-			};
-			name = Debug;
-		};
-		ACBCDFE32DC870D500DFAD1C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LYUN3ZU6G;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mvonbehren.mvonbehr-hw2UITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "mvonbehr-hw2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,24 +332,6 @@
 			buildConfigurations = (
 				ACBCDFDA2DC870D500DFAD1C /* Debug */,
 				ACBCDFDB2DC870D500DFAD1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACBCDFDE2DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACBCDFDF2DC870D500DFAD1C /* Debug */,
-				ACBCDFE02DC870D500DFAD1C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ACBCDFE12DC870D500DFAD1C /* Build configuration list for PBXNativeTarget "mvonbehr-hw2UITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ACBCDFE22DC870D500DFAD1C /* Debug */,
-				ACBCDFE32DC870D500DFAD1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
