@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/d0ZNgcQZ)
+# iOS CTA Train Tracker
+A native iOS application that leverages the CTA Train Tracker API to provide real-time arrival information for Chicago's Red Line. Features an intuitive interface displaying all 33 Red Line stations with live arrival predictions, helping users make informed transit decisions and reduce waiting time at platforms.
+
+## Screenshots
+<img src="https://github.com/myavonbehren/iOS-CTA-Train-Tracker/blob/main/Screenshots/1.png" width="160"> <img src="https://github.com/myavonbehren/iOS-CTA-Train-Tracker/blob/main/Screenshots/2.png" width="160"> <img src="https://github.com/myavonbehren/iOS-CTA-Train-Tracker/blob/main/Screenshots/3.png" width="160">
